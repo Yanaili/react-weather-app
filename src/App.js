@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import SearchBar from './components/SearchBar';
+import CurrentWeather from './components/CurrentWeather';
+import './fonts/Weathertop.ttf';
+import DarkModeToggle from './components/DarkModeToggle';
+import WeatherTitle from './components/WeatherTitle';
+import ForecastWeather from './components/ForecastWeather';
+import TempFormatToggle from './components/TempFormatToggle';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <div className='App-top-bar'>
+        <TempFormatToggle />
+        <DarkModeToggle />
+      </div>
+      <header className='App-header'>
+        <WeatherTitle />
+        <SearchBar />
+        <CurrentWeather />
+        <ForecastWeather />
       </header>
+      <p className='logo'>Yanai.Dev</p>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,95 @@
+$background-color-dark: #282c34;
+$background-color-light: white;
+
+.search-bar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+
+  &-button,
+  &-input {
+    border: 1px solid #fff;
+  }
+
+  &-button {
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    border-left: 0px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+  &-input {
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    height: 30px;
+    flex-grow: 1;
+    width: 300px;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  &-button:hover {
+    cursor: pointer;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    border-left: 0px;
+    opacity: 0.8;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+
+  &-dark-mode-input {
+    border: 1px solid #282c34;
+  }
+
+  &-dark-mode-button {
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    border-left: 0px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: $background-color-dark;
+    border: 1px solid $background-color-dark;
+  }
+
+  &-dark-mode-button:hover {
+    cursor: pointer;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    border-left: 0px;
+    opacity: 0.8;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: $background-color-dark;
+    border: 1px solid $background-color-dark;
+  }
+  &-icon {
+    color: $background-color-dark;
+  }
+  &-dark-mode-icon {
+    color: $background-color-light;
+  }
+
+  &-form {
+    display: flex;
+    width: 90%;
+  }
+
+  &-dark-mode-form {
+    display: flex;
+    width: 90%;
+  }
+}

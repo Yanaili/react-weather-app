@@ -1,0 +1,147 @@
+$light-color: white;
+$dark-color: #282c34;
+
+.forecast-weather {
+  display: flex;
+}
+
+.day-weather {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  &-title {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: $light-color;
+  }
+
+  &-temp {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: $light-color;
+  }
+
+  &-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px;
+    color: $light-color;
+  }
+
+  &-feels-like-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-feels-like {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding-right: 5px;
+    color: $light-color;
+  }
+
+  &-feels-like-value {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: $light-color;
+  }
+
+  &-degrees {
+    display: flex;
+    justify-content: center;
+    color: $light-color;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+    &-icon {
+      font-size: 6px;
+      padding-top: 25px;
+      color: $light-color;
+    }
+  }
+}
+
+.img-wrapper {
+  width: 50px;
+  height: 50px;
+  display: contents;
+  .weather-img {
+    height: fit;
+  }
+}
+
+.day-weather-dark-mode {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  &-title {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: $dark-color;
+  }
+
+  &-temp {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: $dark-color;
+  }
+
+  &-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px;
+    color: $dark-color;
+  }
+
+  &-feels-like-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-feels-like {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding-right: 5px;
+    color: $dark-color;
+  }
+
+  &-feels-like-value {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: $dark-color;
+  }
+
+  &-degrees {
+    display: flex;
+    justify-content: center;
+    color: $dark-color;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+    &-icon {
+      font-size: 6px;
+      padding-top: 25px;
+      color: $dark-color;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+$background-color-dark: #282c34;
+$background-color-light: white;
+$dark-color-trans: #282c34;
+$light-color-trans: white;
+$dark-color: #282c34;
+$light-color: white;
+
+.current-weather {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  &-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: $light-color;
+    margin: 10px;
+  }
+
+  &-feels-like-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  &-temp {
+    margin: 10px;
+  }
+
+  &-feels-like {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding-right: 5px;
+    color: $light-color;
+  }
+
+  &-feels-like-value {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: $light-color;
+  }
+
+  &-degrees {
+    display: flex;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+    justify-content: center;
+    color: $light-color;
+
+    &-icon {
+      font-family: 'Poppins', sans-serif;
+
+      font-size: 6px;
+      padding-top: 25px;
+      color: $light-color;
+    }
+  }
+}
+
+.current-weather-dark-mode {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+
+  &-feels-like-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  &-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: $dark-color;
+    margin: 10px;
+  }
+
+  &-feels-like {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding-right: 5px;
+    color: $dark-color;
+  }
+
+  &-temp {
+    margin: 10px;
+  }
+
+  &-feels-like-value {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: $dark-color;
+  }
+
+  &-degrees {
+    display: flex;
+    justify-content: center;
+    color: $dark-color;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+    &-icon {
+      font-size: 6px;
+      padding-top: 25px;
+      color: $dark-color;
+    }
+  }
+}
