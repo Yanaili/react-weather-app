@@ -65,6 +65,7 @@ const SearchBar = () => {
 
   return (
     <div className='search-bar'>
+      <div className={`${className}-city`}>City:</div>
       <form
         className={`${className}-form`}
         onSubmit={(e) => onSearchClicked(e)}
