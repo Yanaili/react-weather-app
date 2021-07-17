@@ -65,13 +65,14 @@ const SearchBar = () => {
 
   return (
     <div className='search-bar'>
-      <div className={`${className}-city`}>City:</div>
+      {/* <div className={`${className}-city`}>City:</div> */}
       <form
         className={`${className}-form`}
         onSubmit={(e) => onSearchClicked(e)}
       >
         <input
           className='search-bar-input'
+          placeholder='Type City...'
           onChange={(e) => onInputChange(e)}
         ></input>
         <button
