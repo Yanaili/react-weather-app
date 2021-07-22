@@ -103,11 +103,13 @@ $background-color-light: white;
   &-form {
     display: flex;
     width: 90%;
+    justify-content: center;
   }
 
   &-dark-mode-form {
     display: flex;
     width: 90%;
+    justify-content: center;
   }
 }
 
